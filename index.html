@@ -1,13 +1,116 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/x-icon" href="./PIC/아이콘.png">
     <link href = "css/style.css" rel = "stylesheet">
     <title>
         룽람항로 위키
     </title>
 </head>
 <body>
+    
+    <header>
+        <h1>※ 메뉴</h1>
+        <nav>
+          <span><a href = "./table.html">뉴비 가이드</a></span> |
+          <span>함선</span> |
+          <span>건조</span> |
+          <span>전투</span> |
+          <span>장비</span> |
+          <span>Contact</span>
+        </nav>
 
-    <a href = "./table.html"><img src = "PIC/icon_11.png"></a>
+      </header>
+    <img id="azurlane" src = "PIC/벽람항로.png" width="10%">
+
+    <div class = "Title"><h>벽람항로 한국서버<br>유저 가이드 페이지</h></div>
+
+    <img id="FrontPage" src = "PIC/FrontImage.jpeg" width="45%">
+
+    <p class = FrontBackground>
+        <h><span class ="EVENT" style = "font-size: 50px"><i> 진행 예정 이벤트</i></span></h>
+        <img class = "recentevent" src = "./PIC/아이마스 콜라보.png" style="width: 75%; margin-bottom: 3%;">
+        <h div class = "eventname"><i style="color:white;">아이돌마스터 X 벽람항로 콜라보</i></h>
+        <span id="count">
+
+    </p>
+
+
+
+    <div class="section">
+        <div class="section__group">
+          <a href="./table.html" class="rlink">
+            <span class="text-outlined text-outlined_v1 ha-transition-pseudo">
+              <span class="text-outlined__label ha-transition-pseudo">뉴비 가이드</span>
+            </span> 
+          </a>
+        </div>
+        <div class="section__group">
+            <a href="#" class="rlink">
+              <span class="text-outlined text-outlined_v1 ha-transition-pseudo">
+                <span class="text-outlined__label ha-transition-pseudo">함선</span>
+              </span> 
+            </a>
+          </div>
+        <div class="section__group">
+        <a href="#" class="rlink">
+            <span class="text-outlined text-outlined_v1 ha-transition-pseudo">
+            <span class="text-outlined__label ha-transition-pseudo">건조</span>
+            </span> 
+        </a>
+        </div>
+        <div class="section__group">
+            <a href="#" class="rlink">
+              <span class="text-outlined text-outlined_v1 ha-transition-pseudo">
+                <span class="text-outlined__label ha-transition-pseudo">장비</span>
+              </span> 
+            </a>
+        </div>
+        <div class="section__group">
+            <a href="#" class="rlink">
+              <span class="text-outlined text-outlined_v1 ha-transition-pseudo">
+                <span class="text-outlined__label ha-transition-pseudo">전투</span>
+              </span> 
+            </a>
+        </div>
+      </div>
+
+
+    <p class ="main">
+        <img id="azurlane2" src = "PIC/벽람항로.png" width="25%">
+        <h><span class ="EVENT" style = "font-size: 50px"><i> 현재 진행중인 이벤트</i></span></h>
+        <br>
+        <img class = "recentevent" src = "./PIC/저편을 건너온 물결 복각-2.png" style="width: 75%;">
+        <br>
+        <h div class = "eventname"><i>저편을 건너온 물결 복각</i> (스루가 공투)<br>
+        <span style="font-size:50px;">기간 : 7/14 ~ 7/28</span></div></h></div></h>
+        
+        <br>
+        <img class = "recentevent" src = "./PIC/META 헬레나.jpg" style="width: 75%;">
+        <br>
+        <h div class = "eventname"><i>META 헬레나</i> (세이렌 대작전)<br>
+        <span style="font-size:50px;">기간 : 7/14 ~ 10/14 점검</span></div></h>
+        <br>
+        <br>
+        
+    </p>
+
+
+    <script>
+
+        var dday = new Date("July 28, 2021, 17:00:00").getTime();
+
+        setInterval(function() {
+        var today = new Date().getTime();
+        var gap = dday - today;
+        var day = Math.ceil(gap / (1000 * 60 * 60 * 24));
+        var hour = Math.ceil((gap % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var min = Math.ceil((gap % (1000 * 60 * 60)) / (1000 * 60));
+        var sec = Math.ceil((gap % (1000 * 60)) / 1000);
+
+        document.getElementById("count").innerHTML = "이벤트 시작까지 " + day + "일 " + hour + "시간 " + min + "분 " + sec + "초";
+}, 1000);
+
+    </script>
 
 </body>
