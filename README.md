@@ -1,5 +1,5 @@
 # AzurLaneKorWiki.github.io
-룽람항로 가이드 프로젝트 reamde v0.1
+룽람항로 가이드 프로젝트 readme v0.1
 
 사람이 더 늘어날 것을 대비해 작성합니다
 
