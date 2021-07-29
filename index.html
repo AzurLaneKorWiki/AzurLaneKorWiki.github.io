@@ -6,6 +6,8 @@
     <title>
         룽람항로 위키
     </title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+
 </head>
 <body>
     
@@ -14,24 +16,26 @@
         <nav>
           <span><a href = "./table.html">뉴비 가이드</a></span> |
           <span>함선</span> |
-          <span>건조</span> |
+          <span><a href = "./건조/건조_index.html">건조</a></span> |
           <span>전투</span> |
           <span>장비</span> |
           <span>Contact</span>
         </nav>
 
       </header>
-    <img id="azurlane" src = "PIC/벽람항로.png" width="10%">
+    <img id="azurlane" src = "PIC/벽람항로.png">
 
     <div class = "Title"><h>벽람항로 한국서버<br>유저 가이드 페이지</h></div>
 
     <img id="FrontPage" src = "PIC/FrontImage.jpeg" width="45%">
 
     <p class = FrontBackground>
-        <h><span class ="EVENT" style = "font-size: 50px"><i> 진행 예정 이벤트</i></span></h>
+        <h><span class ="EVENT" style = "font-size: 450%;"><i> 현재 진행중인 이벤트</i></span></h>
         <img class = "recentevent" src = "./PIC/아이마스 콜라보.png" style="width: 75%; margin-bottom: 3%;">
         <h div class = "eventname"><i style="color:white;">아이돌마스터 X 벽람항로 콜라보</i></h>
-        <span id="count">
+
+          <span id="count"> 
+
 
     </p>
 
@@ -53,7 +57,7 @@
             </a>
           </div>
         <div class="section__group">
-        <a href="#" class="rlink">
+        <a href="./건조/건조_index.html" class="rlink">
             <span class="text-outlined text-outlined_v1 ha-transition-pseudo">
             <span class="text-outlined__label ha-transition-pseudo">건조</span>
             </span> 
@@ -79,12 +83,12 @@
     <p class ="main">
         <img id="azurlane2" src = "PIC/벽람항로.png" width="25%">
         <h><span class ="EVENT" style = "font-size: 50px"><i> 현재 진행중인 이벤트</i></span></h>
-        <br>
+        <!--<br>
         <img class = "recentevent" src = "./PIC/저편을 건너온 물결 복각-2.png" style="width: 75%;">
         <br>
         <h div class = "eventname"><i>저편을 건너온 물결 복각</i> (스루가 공투)<br>
         <span style="font-size:50px;">기간 : 7/14 ~ 7/28</span></div></h></div></h>
-        
+        -->
         <br>
         <img class = "recentevent" src = "./PIC/META 헬레나.jpg" style="width: 75%;">
         <br>
@@ -98,7 +102,9 @@
 
     <script>
 
-        var dday = new Date("July 28, 2021, 17:00:00").getTime();
+        var dday = new Date("August 11, 2021, 10:29:00").getTime();
+
+      /* 몬가 꼬였다; 실제 시간보다 하루하고도 31분 일찍으로 설정해야 제대로 작동함 */
 
         setInterval(function() {
         var today = new Date().getTime();
@@ -108,7 +114,7 @@
         var min = Math.ceil((gap % (1000 * 60 * 60)) / (1000 * 60));
         var sec = Math.ceil((gap % (1000 * 60)) / 1000);
 
-        document.getElementById("count").innerHTML = "이벤트 시작까지 " + day + "일 " + hour + "시간 " + min + "분 " + sec + "초";
+        document.getElementById("count").innerHTML = "이벤트 종료까지 " + day + "일 " + hour + "시간 " + min + "분 " + sec + "초";
 }, 1000);
 
     </script>

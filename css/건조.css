@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'NanumBarunGothic';
+    src: url(../font/NanumBarunGothic.ttf);
+}
+
+body {
+    font-family: 'NanumBarunGothic';
+}
+
+table {
+    width: 50%;
+    vertical-align:middle;
+    text-align: center;
+}
+
+.tg  {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+.tg td{
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    font-size:14px;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+.tg th{
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    font-size:14px;
+    font-weight:normal;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+.tg .tg-9wq8{
+    border-color:inherit;
+    text-align:center;
+    vertical-align:middle;
+}
+.tg .tg-0pky{
+    border-color:inherit;
+    text-align:center;
+    vertical-align:middle;
+}
+
+/* 여기까지 최상단 표 */
+
+.category_icon { /* 함종 아이콘 */
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+
+    padding-bottom: 2%;
+}
+
+.rarity_small {
+    font-size: 0.7em;
+}
+
+.rarity_R {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: skyblue;
+}
+
+.rarity_N {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: gray;
+}
+
+.rarity_SR {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: purple;
+}
+
+.rarity_SSR {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: gold;
+}
+
+.build_time {
+    margin-top: 10%;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+/* 말풍선 */
+
+a.atlas {
+    position:relative;
+    text-decoration: none;
+    color: black;
+}
+
+a.atlas span {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: -10px;
+    width: 125px;
+    padding: 5px;
+    z-index: 100;
+    background: #000;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+}
+a:hover.atlas span {
+    display: block;
+    position: relative;
+    margin-top: -12%;
+    margin-bottom: 3%;
+    margin-left: auto;
+    margin-right: auto;
+}
