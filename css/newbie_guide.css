@@ -1,0 +1,17 @@
+h {
+    display: block;
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.market_icon {
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+}
+
+.market::after {
+	content: "";
+	clear: both;
+	display: table;
+}

@@ -1,0 +1,87 @@
+@font-face {
+    font-family: '12롯데마트드림Bold';
+    src: url(../font/12롯데마트드림Bold.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    size: 15px;
+}
+
+body {
+    font-family: '12롯데마트드림Bold';
+    background-repeat: repeat;
+}
+
+.title { /* 타이틀 이미지 */
+
+    display: block;
+    margin: 4% auto 4% auto;
+    width: 80%;
+    border: 2px solid;
+    border-radius: 3px;
+}
+
+header {  /* 헤더 */
+
+    position: fixed;
+  top: 0;
+  /* width: 100% */
+  left: 0;
+  right: 0;
+    height: 75px;
+    padding: 1rem;
+    color: white;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    border: solid 2px white;
+    font-size: 1.25em;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+.captured { /* 인게임 스크린샷 및 이미지 */
+    width: 60%;
+    display: block;
+    margin: 3% auto 3% auto;
+    border: 2px solid;
+    border-radius: 3px;
+}
+
+.market {
+    vertical-align: center;
+    text-align:center;
+}
+.market .market_icon { /* 앱스토어들 이미지 */
+    margin: 10% 2.5% 3% 2.5%;
+}
+
+.box_1 { /* 텍스트 상자, 반응성 옵션 주의 */
+
+    border: 2px solid;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 10%;
+    size: 5em;
+    font-size: 1.3em;
+}
+
+.chapter {
+    border: 2px solid;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.next { /* 다음 페이지로 넘어가기 */
+    display: blcok;
+    text-align: right;
+    font-size: 2em;
+
+    margin-top: 5%;
+}
