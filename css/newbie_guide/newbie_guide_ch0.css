@@ -1,7 +1,7 @@
-@font-face {
-    font-family: '12롯데마트드림Bold';
-    src: url(../../font/12롯데마트드림Bold.ttf);
-}
+@font-face { 
+    font-family: 'LotteDream';
+    src: url(../../font/12롯데마트드림Bold.ttf) format('truetype'); 
+  }
 
 * {
     box-sizing: border-box;
@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: '12롯데마트드림Bold';
+    font-family: 'LotteDream';
     background-repeat: repeat;
 }
 
